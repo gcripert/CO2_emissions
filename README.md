@@ -1,4 +1,4 @@
-# Global CO2 Emissions 
+# Global CO2 Emissions (work in progress)
 by Gabrielle Ripert
 
 ## About
