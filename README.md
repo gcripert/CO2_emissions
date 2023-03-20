@@ -6,3 +6,5 @@ This is a project for Code Louisville Data Analysis 1. It will explore trends in
 
 ## Instructions
 Python 3.11 will need to be installed to run this program.
+
+1. Clone the repository.
