@@ -8,3 +8,5 @@ This is a project for Code Louisville Data Analysis 1. It will explore trends in
 Python 3.11 will need to be installed to run this program.
 
 1. Clone the repository.
+2. Activate the virtual environment in the project folder
+3. 
