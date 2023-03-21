@@ -38,24 +38,24 @@ df = df[df['Country'] != 'Global']
 
 
 
-#TO DO: FIGURE OUT REGEX! Below: Sorting out annoying countries
+#Sorting out data records not recognized as countries by pycountry 
 
-df = df.replace('Bonaire, Saint Eustatius and Saba', 'Netherlands', regex = True)
-df = df.replace('Faeroe Islands', 'Denmark', regex = True)
-df = df.replace('Micronesia (Federated States of)', 'United States', regex = False)
-df = df.replace('Panama Canal Zone', 'Panama', regex = False)
-df = df.replace('French Equatorial Africa', 'France', regex = False)
-df = df.replace('French West Africa', 'France', regex = False)
-df = df.replace('Kosovo', 'Serbia', regex = False)
-df = df.replace('Leeward Islands', 'United States', regex = False)
-df = df.replace('Occupied Palestinian Territory', 'Palestine', regex = False)
-df = df.replace('Pacific Islands (Palau)', 'Palau', regex = False)
-df = df.replace('Ryukyu Islands', 'Japan', regex = False)
-df = df.replace('Saint Helena', 'United Kingdom', regex = False)
-df = df.replace('Sint Maarten (Dutch part)', 'Saint Martin', regex = False)
-df = df.replace('St. Kitts-Nevis-Anguilla', 'United Kingdom', regex = False)
-df = df.replace('Timor-Leste', 'Indonesia', regex = False)
-df = df.replace('Wallis and Futuna Islands', 'France', regex = False)
+df = df.replace('Bonaire, Saint Eustatius and Saba', 'Netherlands')
+df = df.replace('Faeroe Islands', 'Denmark')
+df = df.replace('Micronesia (Federated States of)', 'United States')
+df = df.replace('Panama Canal Zone', 'Panama')
+df = df.replace('French Equatorial Africa', 'France')
+df = df.replace('French West Africa', 'France')
+df = df.replace('Kosovo', 'Serbia')
+df = df.replace('Leeward Islands', 'United States')
+df = df.replace('Occupied Palestinian Territory', 'Palestine')
+df = df.replace('Pacific Islands (Palau)', 'Palau')
+df = df.replace('Ryukyu Islands', 'Japan')
+df = df.replace('Saint Helena', 'United Kingdom')
+df = df.replace('Sint Maarten (Dutch part)', 'Saint Martin')
+df = df.replace('St. Kitts-Nevis-Anguilla', 'United Kingdom')
+df = df.replace('Timor-Leste', 'Indonesia')
+df = df.replace('Wallis and Futuna Islands', 'France')
 
 
 
