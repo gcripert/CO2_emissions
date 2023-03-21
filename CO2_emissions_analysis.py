@@ -66,7 +66,7 @@ df = add_continent_column(df)
 
 
 
-#below: summing emissions by type/continent and preparing to graph
+#below: summing emissions by continent 
 
 df_europe = df[df['Continent'] == 'Europe']
 df_europe = df_europe.groupby('Year').sum(numeric_only = True)
@@ -89,7 +89,7 @@ df_oceania = df_oceania.groupby('Year').sum(numeric_only = True)
 
 
 
-
+#plotting total emissions as line graph
 
 
 ax = plt.plot(df_europe['Total'], label = 'Europe')
@@ -112,6 +112,9 @@ plt.title('CO2 Emissions (Total)')
 plt.show()
 
 
+#plotting total emissions per capita as line graph
+
+
 ax = plt.plot(df_europe['Per Capita'], label = 'Europe')
 
 ax = plt.plot(df_na['Per Capita'], label = 'North America')
@@ -124,12 +127,7 @@ ax = plt.plot(df_sa['Per Capita'], label = 'South America')
 
 ax = plt.plot(df_oceania['Per Capita'], label = 'Oceania')
 
-
-
-
               
-
-
 plt.legend(title = 'Country')
 plt.ylabel('Megatons CO2')
 plt.xlabel('Year')
