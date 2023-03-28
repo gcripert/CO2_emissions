@@ -10,6 +10,6 @@ The original csv data can be found at: https://www.kaggle.com/datasets/thedevast
 You will need to have Python 3.11 installed to run this program
 
 1. Clone this repository to your machine
-2. Activate the virtual environment in the project folder
+2. Create and activate the virtual environment in the project folder
 3. Use pip to install requirements.txt
 4. Run CO2_emissions_analysis.py
