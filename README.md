@@ -1,13 +1,15 @@
-# Global CO2 Emissions (work in progress)
+# Taking a Look at Global CO2 Emissions 
 by Gabrielle Ripert
 
 ## About
-This is a project for Code Louisville Data Analysis 1. It will explore trends in global carbon dioxide emissions from various sources as well as per capita. 
+This is a project for Code Louisville Data Analysis 1. It will explore trends in carbon dioxide emissions from 1950 to 2021. To provide for better visualization of the data, all countries have been sorted into six geographically based regions.
 
-## Instructions
-Python 3.11 will need to be installed to run this program.
+The original csv data can be found at: https://www.kaggle.com/datasets/thedevastator/global-fossil-co2-emissions-by-country-2002-2022
 
-1. Clone the repository.
+## Running This Program
+You will need to have Python 3.11 installed to run this program
+
+1. Clone the repository
 2. Activate the virtual environment in the project folder
 3. Use pip to install requirements.txt
 4. Run CO2_emissions_analysis.py
