@@ -64,10 +64,10 @@ def plot_data(df, column, graph_title):
     ax = plt.plot(df_oceania[column], label = 'Oceania')
 
 
-    plt.legend(title = 'Region', title_fontsize = 16)
-    plt.ylabel('Megatons CO2')
-    plt.xlabel('Year')
-    plt.title(graph_title)
+    plt.legend(title = 'Region', fontsize=14, title_fontsize = 16)
+    plt.ylabel('Megatons CO2', fontsize=16)
+    plt.xlabel('Year', fontsize=16)
+    plt.title(graph_title, fontsize=20)
     plt.show()
 
 
@@ -107,6 +107,13 @@ def clean_data(df):
 
     return df
 
+
+# Initializing graph tick sizes
+
+def init_graph_style():
+    mpl.rc('xtick', labelsize=16)
+    mpl.rc('ytick', labelsize=16)
+
 # Reading data from csv
 
 df = pd.read_csv('CO2_data/megatons_CO2.csv')
@@ -119,6 +126,7 @@ df = clean_data(df)
 
 df = add_continent_column(df)
 
+init_graph_style()
 
 plot_data(df, 'Total', 'CO2 Emissions (Total)')
 
