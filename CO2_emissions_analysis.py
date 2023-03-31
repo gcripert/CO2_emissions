@@ -59,15 +59,16 @@ def plot_data(df, column, graph_title):
 
     ax = plt.plot(df_africa[column], label = 'Africa')
 
-    ax = plt.plot(df_sa[column], label = 'South America')
+    ax = plt.plot(df_sa[column], label = 'South America', color = 'cyan')
 
-    ax = plt.plot(df_oceania[column], label = 'Oceania')
+    ax = plt.plot(df_oceania[column], label = 'Oceania', color = 'pink')
 
 
-    plt.legend(title = 'Region', fontsize=14, title_fontsize = 16)
-    plt.ylabel('Megatons CO2', fontsize=16)
-    plt.xlabel('Year', fontsize=16)
-    plt.title(graph_title, fontsize=20)
+    
+    plt.legend(title = 'Region', fontsize=16, title_fontsize = 18)
+    plt.ylabel('Megatons CO2', fontsize=18)
+    plt.xlabel('Year', fontsize=18)
+    plt.title(graph_title, fontsize=22)
     plt.show()
 
 
@@ -111,8 +112,12 @@ def clean_data(df):
 # Initializing graph tick sizes
 
 def init_graph_style():
-    mpl.rc('xtick', labelsize=16)
-    mpl.rc('ytick', labelsize=16)
+    mpl.rc('xtick', labelsize=18)
+    mpl.rc('ytick', labelsize=18)
+
+    # Changing to a more ~aesthetic~ font
+
+    plt.rcParams['font.family'] = 'Courier New'
 
 # Reading data from csv
 
